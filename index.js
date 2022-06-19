@@ -63,7 +63,8 @@ function add( a , b) {
     // write your code here
     // use greet, isAnAdult and yearsToAdulthood to help you!
     if (isAnAdult(age) ){
-    return greet (name)  // ignore it
+    // @ts-ignore
+    return greet (name) 
      }
       else {
         return `Go Home and come back after ${yearsToAdulthood(age)} years!!!`
