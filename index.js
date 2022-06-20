@@ -59,15 +59,16 @@ function add( a , b) {
   //   - if they are, greet them
   //   - if they are not, tell them to come back in X years (when they are)
   // Output: The result (string)
-  function admit(age, name) {
+  function admit(person) {
     // write your code here
     // use greet, isAnAdult and yearsToAdulthood to help you!
-    if (isAnAdult(age) ){
-    // @ts-ignore
-    return greet (name) 
+    if (isAnAdult(person.age) ){
+    console.log(greet(person.name)) // ignore it
      }
       else {
-        return `Go Home and come back after ${yearsToAdulthood(age)} years!!!`
+        console.log ( `Go Home and come back after ${yearsToAdulthood(person.age)} years!!!`)
       }
   }
   
+let person = {age:18, name:"Eva"}
+admit(person)
